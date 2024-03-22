@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -10,6 +11,7 @@ public class App {
         ex2();
         ex3();
         ex4();
+        ex5();
     }
     
     public static void ex1() {
@@ -60,6 +62,15 @@ public class App {
         System.out.println(mp.getValor("segundo"));
         System.out.println(mp.getValor("terceiro"));
         System.out.println("--------------------");
+    }
+
+    public static void ex5() {
+        System.out.println("Exercicio 5 - wild cards");
+        ExemplosWildCard.wunkonow(new ArrayList<String>());
+        ExemplosWildCard.wsuper(new ArrayList<Integer>());
+        ExemplosWildCard.wsuper(new ArrayList<Object>());
+        ExemplosWildCard.wextends(new ArrayList<Integer>());
+        ExemplosWildCard.wextends(new ArrayList<Double>());
     }
 
 
